@@ -1,0 +1,64 @@
+body
+{
+    background: rgb(18,47,27);
+    background: linear-gradient(0deg, rgba(18,47,27,1) 0%, rgba(81,150,74,1) 41%, rgba(125,240,98,1) 100%);
+    height: 100vh;
+    margin: 0;
+}
+
+.div_btn
+{
+    display: grid;
+    justify-content: center;
+    grid-gap: 3vw;
+    padding-top: 5vh;
+}
+.fst_btn, .scd_btn, .thd_btn
+{
+    grid-row: 1;
+    width: 200px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 5px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fst_modal
+{
+    width: 70vw;
+    margin: auto;
+    background-color: white;
+    padding: 3vh 3vw 5vh 3vw;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10vh;
+    display: none;
+    filter: drop-shadow(10px 40px 150px black);
+    z-index: 10;
+}
+.btn_close
+{
+    background-color: white;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    display: grid;
+    cursor: pointer;
+}
+.div_btn-close
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container {
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	display: none;
+}

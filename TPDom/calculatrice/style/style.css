@@ -1,0 +1,70 @@
+.screen
+{
+    margin-bottom: 0.5em;
+    width: 400px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: right;
+}
+.screen p
+{
+    padding-right: 15px;
+}
+section
+{
+    background-color: rgb(176, 211, 195);
+    width: 500px;
+    height: 550px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calc
+{
+    display: grid;
+    height: 350px;
+    width: 400px;
+}
+.calc div
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin-top: 5px;
+}
+#egal
+{
+    grid-column: 3/5;
+    background-color: darkslategray;
+    color: white;
+}
+#reset
+{
+    background-color: brown;
+    color: white;
+}
+button
+{
+    border-radius: 5px;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+.info
+{
+    color: darkslategray;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 20vw;
+    margin: auto;
+}
+.info span
+{
+    font-weight: bolder;
+    font-size: larger;   
+}

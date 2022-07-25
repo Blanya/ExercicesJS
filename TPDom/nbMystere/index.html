@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Nombre Mystere</title>
+</head>
+<body>
+    <div id="modal">
+        <h2 class="modal_title">Le nombre mystere</h2>
+        <p id="p_instruction"></p>
+        <p id="p_trouve"></p>
+        <div class="modal_flex">
+            <p class="p_tentatives">Nombre de coups: <span id="nb_tentatives">0</span></p>
+            <input type="number" name="" id="input_number" min="1" max="50">
+            <button id="valider" onclick="valider()" onkeypress="">Valider</button>
+        </div>
+        <button id="tryAgain" onclick="rejouer()">Rejouer</button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+body
+{
+    background-color: rgb(22, 54, 54);
+    color: rgb(117, 137, 144);
+    font-family: 'Indie Flower', cursive;
+}
+section h2
+{
+    font-size: 4em;
+    text-align: center;
+    padding-top: 5vh;
+}
+section h3
+{
+    font-family: 'Chakra Petch', sans-serif;
+}
+.de
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: grid;
+}
+.dot
+{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: auto;
+}
+.container_des
+{
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+/* Premier dé */
+#fst_dot
+{
+    grid-row: 2;
+    grid-column: 2;    
+}
+
+/*Second dé */
+#fst_dot--scd
+{
+    grid-row: 3;
+    grid-column: 1;
+}
+#scd_dot--scd
+{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+/* Troisième dé */
+#fst_dot--thd
+{
+    grid-row: 2;
+    grid-column: 2;
+}
+#scd_dot--thd
+{
+    grid-row: 1;
+    grid-column: 3;
+}
+#thd_dot--thd
+{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+/* Quatrième dé */
+#fst_dot--fth
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+#scd_dot--fth
+{
+    grid-row: 1;
+    grid-column: 3;
+}
+#thd_dot--fth
+{
+    grid-row: 3;
+    grid-column: 1;
+}
+#fth_dot--fth
+{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+/* Cinquième dé */
+#fst_dot--fith
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+#scd_dot--fith
+{
+    grid-row: 1;
+    grid-column: 3;
+}
+#thd_dot--fith
+{
+    grid-row: 3;
+    grid-column: 1;
+}
+#fth_dot--fith
+{
+    grid-row: 3;
+    grid-column: 3;
+}
+#fith_dot--fith
+{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+/* Sizième dé */
+#fst_dot--sth
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+#scd_dot--sth
+{
+    grid-row: 1;
+    grid-column: 3;
+}
+#thd_dot--sth
+{
+    grid-row: 2;
+    grid-column: 1;
+}
+#fth_dot--sth
+{
+    grid-row: 2;
+    grid-column: 3;
+}
+#fith_dot--sth
+{
+    grid-row: 3;
+    grid-column: 1;
+}
+#sth_dot--sth
+{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+#fst_de, #scd_de, #thd_de, #fth_de, #fith_de, #sth_de
+{
+    display: none;
+}

@@ -1,0 +1,48 @@
+#modal
+{
+    background-color: orangered ;
+    width: 35vw;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+    color: #FFF;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.modal_title
+{
+    color: darkslategray;
+    padding-top: 25px;
+}
+.modal_flex
+{
+    display: flex;
+    justify-content: end;
+    height: 35px;
+}
+.modal_flex p
+{
+    font-size: smaller;
+    margin-right: 20px;
+}
+#valider
+{
+    margin-right: 5%;
+}
+#input_number
+{
+    width: 50px;
+}
+#modal button
+{
+    background-color: black;
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#tryAgain
+{
+    width: 90%;
+    margin : 25px 0;
+    padding: 5px 0;
+}

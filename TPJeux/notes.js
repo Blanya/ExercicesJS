@@ -1,6 +1,6 @@
 var prompt = require("prompt-sync")();
 
-let propositions = ["1 -Stocker les notes des élèves dans un tableau", "2- Afficher la liste des notes", "3- Modififer une note", "4- Afficher la moyenne d'une classe", "5- Afficher la note la plus élevée", "6- Afficher la note la plus basse", "0- Quitter le programme"];
+let propositions = ["1 -Stocker les notes des élèves dans un tableau", "2- Afficher la liste des notes", "3- Modifier une note", "4- Afficher la moyenne d'une classe", "5- Afficher la note la plus élevée", "6- Afficher la note la plus basse", "0- Quitter le programme"];
 
 let answer, notes=[];
 
@@ -59,8 +59,17 @@ function proposition()
             proposition();
             break;
         case answer == 3:
-            let modifSupp = prompt("Souhaitez-vous modifier ou suppprimer une note ? 1- La modifier, 2- La supprimer  : ");
+            do 
+            {
+                modifSupp = prompt("Souhaitez-vous modifier ou suppprimer une note ? 1- La modifier, 2- La supprimer  : ");
+            }while(modifSupp < 1 || modifSupp > 2)
+            
             let modification = Number(prompt("Quelle est le numéro de la note que vous souhaitez modifier/ supprimer ? "));
+            do
+            {
+                console.log("Saisie incorrecte, note inexistante");
+                modification = Number(prompt("Quelle est le numéro de la note que vous souhaitez modifier/ supprimer ? "));    
+            } while(modification > notes.length || modification < 1)
             if(modifSupp == 1)
             {
                 notes[modification-1] = prompt("Quelle est la nouvelle note numéro " + modification + " ? ");
